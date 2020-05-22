@@ -12,12 +12,12 @@ confinement: devmode # use 'strict' once you have the right plugs and slots
 # icon: gui/icon.png 
 
 apps:
-  snap-interface-a:
+  snap-interface-b:
     command: bin/snap_basic
 
 parts:
 # parts are used to describe your application, where its various components can be found, its build and run-time requirements, and those of its dependencies.
-  snap-interface-a: # arbitary
+  snap-interface-b: # arbitary
     # See 'snapcraft plugins'
     # plugin: nil # commonly used frameworks
     plugin: autotools
