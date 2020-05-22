@@ -14,6 +14,8 @@ confinement: devmode # use 'strict' once you have the right plugs and slots
 apps:
   snap-interface-a:
     command: bin/snap_basic
+    slots:
+      - a-snap-plug
 
 parts:
 # parts are used to describe your application, where its various components can be found, its build and run-time requirements, and those of its dependencies.
