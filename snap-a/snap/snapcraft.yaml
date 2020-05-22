@@ -15,6 +15,7 @@ parts:
   my-part: # arbitary
     # See 'snapcraft plugins'
     # plugin: nil # commonly used frameworks
+    command: bin/snap_basic
     plugin: autotools
     # source: # github https link / package name
     source: code
