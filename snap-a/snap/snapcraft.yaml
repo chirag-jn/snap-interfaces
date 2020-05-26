@@ -14,7 +14,7 @@ confinement: devmode # use 'strict' once you have the right plugs and slots
 apps:
   snap-interface-a:
     command: bin/snap_basic
-    slots:
+    plugs:
       - a-snap-plug
 
 parts:
