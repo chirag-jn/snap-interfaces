@@ -15,7 +15,8 @@ apps:
   snap-a:
     command: bin/snap_basic 
     # relative to prime folder
-
+    plugs:
+      - a-snap-plug
 # apps:
 #   snap-interface-a:
 #     command: bin/snap_basic
