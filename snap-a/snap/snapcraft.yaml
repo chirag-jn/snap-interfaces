@@ -15,13 +15,21 @@ apps:
   snap-a:
     command: bin/snap_basic 
     # relative to prime folder
-    plugs:
-      - my-inter
+    # plugs:
+    #   - my-inter
 # apps:
 #   snap-interface-a:
 #     command: bin/snap_basic
 #     plugs:
 #       - a-snap-plug
+
+slots:
+  snap-a-slot:
+    interface: content
+    content: executables
+    source:
+      read:
+        - bin
 
 parts:
 # parts are used to describe your application, where its various components can be found, its build and run-time requirements, and those of its dependencies.
