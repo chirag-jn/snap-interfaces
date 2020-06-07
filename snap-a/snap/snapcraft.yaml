@@ -15,8 +15,9 @@ apps:
   snap-a:
     command: bin/snap_basic 
     # relative to prime folder
-    # plugs:
-    #   - my-inter
+    slots:
+      - my-inter
+
 # apps:
 #   snap-interface-a:
 #     command: bin/snap_basic
@@ -24,7 +25,7 @@ apps:
 #       - a-snap-plug
 
 slots:
-  snap-a-slot:
+  my-inter:
     interface: content
     content: executables
     source:

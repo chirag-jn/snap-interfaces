@@ -29,7 +29,7 @@ plugs:
     interface: content
     content: executables
     default-provider: snap-a
-    target: shared-bin
+    target: bin/shared-bin
 
 parts:
 # parts are used to describe your application, where its various components can be found, its build and run-time requirements, and those of its dependencies.
