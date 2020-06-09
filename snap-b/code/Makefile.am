@@ -1,7 +1,7 @@
 AUTOMAKE_OPTIONS = subdir-objects
 bin_PROGRAMS = snap_basic_b
 
-snap_basic_SOURCES = \
+snap_basic_b_SOURCES = \
 	src/main.c
 
 # lib_LTLIBRARIES = libsnapb.la
