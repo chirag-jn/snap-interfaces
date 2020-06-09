@@ -8,15 +8,15 @@ description: |
   we live in tweetspace and your description wants to look good in the snap
   store.
 grade: devel # must be 'stable' to release into candidate/stable channels
-confinement: devmode # use 'strict' once you have the right plugs and slots
+confinement: strict # use 'strict' once you have the right plugs and slots
 # icon: gui/icon.png 
 
-apps:
-  snap-b:
+#apps:
+#  snap-b:
     # command: bin/snap_basic 
     # relative to prime folder
-    plugs:
-      - my-inter
+#    plugs:
+#      - my-inter
 
 # apps:
 #   snap-interface-b:
@@ -28,8 +28,8 @@ plugs:
   my-inter:
     interface: content
     content: executables
-    default-provider: snap-a
-    target: bin
+    default-provider: a-qc-pack-chirag
+    target: $SNAP/extra-libs
 
 parts:
 # parts are used to describe your application, where its various components can be found, its build and run-time requirements, and those of its dependencies.
