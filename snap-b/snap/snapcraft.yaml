@@ -7,15 +7,17 @@ description: |
   most important story about your snap. Keep it under 100 words though,
   we live in tweetspace and your description wants to look good in the snap
   store.
-grade: devel # must be 'stable' to release into candidate/stable channels
+grade: stable # must be 'stable' to release into candidate/stable channels
 confinement: strict # use 'strict' once you have the right plugs and slots
 # icon: gui/icon.png 
 
 apps:
  snap-b:
-    command: bin/snap_basic_b
+   command: bin/snap_basic_b
    plugs:
      - my-inter
+   environment:
+       LD_LIBRARY-PATH: $SNAP/extra-libs
 
 # apps:
 #   snap-interface-b:
@@ -27,7 +29,7 @@ plugs:
   my-inter:
     interface: content
     content: executables
-    default-provider: a-qc-pack-chirag
+    default-provider: a-qc-pack-chirag:my-inter
     target: $SNAP/extra-libs
 
 parts:
