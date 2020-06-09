@@ -1,7 +1,6 @@
-#include "main.h"
-
+#include "hello_world.h"
 
 int main(int argc, char *argv[]) {
-	puts("Hello World! What's up, I'm Snap B");
+	hello_world(10);
 	return 0;
 }

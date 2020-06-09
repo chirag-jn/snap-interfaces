@@ -5,5 +5,5 @@ AUTOMAKE_OPTIONS = subdir-objects
 # 	src/main.c
 
 lib_LTLIBRARIES = libsnapa.la
-libsnapa_la_SOURCES = src/main.c
-libsnapa_la_LDFLAGS = -version-info 0:0:0
+libsnapa_la_SOURCES = src/hello_world.c
+libsnapa_la_LDFLAGS = -version-info 0:0:0 -shared
