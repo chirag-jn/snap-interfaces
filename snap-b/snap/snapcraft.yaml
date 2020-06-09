@@ -29,7 +29,7 @@ plugs:
   b-pack-plug:
     interface: content
     content: qc-inter
-    default-provider: a-qc-pack-chirag
+    default-provider: a-pack
     target: $SNAP/extra-libs
 
 parts:
