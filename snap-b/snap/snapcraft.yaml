@@ -12,7 +12,7 @@ confinement: strict # use 'strict' once you have the right plugs and slots
 # icon: gui/icon.png 
 
 apps:
- snap-b:
+ b-pack:
    command: bin/snap_basic_b
    plugs:
      - b-pack-plug
