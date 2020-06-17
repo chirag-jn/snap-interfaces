@@ -17,7 +17,7 @@ apps:
    plugs:
      - b-pack-plug
    environment:
-       LD_LIBRARY-PATH: $SNAP/extra-libs
+       LD_LIBRARY_PATH: $SNAP/extra-libs
 
 # apps:
 #   snap-interface-b:
